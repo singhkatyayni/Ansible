@@ -1,5 +1,4 @@
-- name: Sample Playbook
-  hosts: all
-  tasks:
-    ansible.builtin.debug:
-      msg: "Hello"
+- name: Print return information from the previous task
+  ansible.builtin.debug:
+    var: result
+    verbosity: 2
